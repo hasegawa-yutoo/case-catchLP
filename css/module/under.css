@@ -1,0 +1,36 @@
+.under-mv {
+  background-color: #EB9757; }
+  .under-mv .header {
+    padding-top: 1rem; }
+    .under-mv .header .app-store {
+      margin-top: .5rem; }
+  .under-mv__ttl {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+    padding-bottom: 10rem; }
+
+.company {
+  padding: 10rem 0; }
+  .company .section-ttl {
+    color: #3F4C58; }
+  .company__table {
+    width: 80rem;
+    margin: 0 auto;
+    border-top: 1px solid #707070;
+    color: #6C6C6C; }
+    @media screen and (max-width: 992px) {
+      .company__table {
+        width: 100%; } }
+    .company__table tr {
+      border-bottom: 1px solid #707070; }
+    .company__table th, .company__table td {
+      padding: 1.5rem 0; }
+    .company__table th {
+      text-align: left;
+      padding-left: 3rem;
+      font-weight: 400; }
+      @media screen and (max-width: 480px) {
+        .company__table th {
+          padding-left: 1.5rem; } }

@@ -1,0 +1,22 @@
+.footer__nav {
+  padding: 2.5rem 0; }
+  .footer__nav li {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.2rem; }
+    .footer__nav li a {
+      color: #6C6C6C; }
+      .footer__nav li a:hover {
+        text-decoration: underline; }
+
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background-color: #707070; }
+
+.footer small {
+  display: block;
+  color: #6C6C6C;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px 0; }

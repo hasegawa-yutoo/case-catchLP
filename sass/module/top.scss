@@ -1,0 +1,274 @@
+@import "setup";
+
+.mv {
+    position: relative;
+    min-height: 80vh;
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200vw;
+        height: 80vh;
+        @media screen and (min-width: 1600px) {
+            width: 300vw;
+        }
+        @include mq(sm) {
+            height: 60vh;
+        }
+    }
+    .left-skew {
+        background: linear-gradient(rgba(237, 99, 94, 0.6), rgba(228, 155, 61, 0.6));
+        transform: rotate(-8deg);
+        margin-top: -23rem;
+        margin-left: -6rem;
+        z-index: -1;
+        @media screen and (min-width: 1600px) {
+            margin-top: -27vw;
+            margin-left: -10rem;
+        }
+        @include mq(xl) {
+            margin-top: -18rem;
+        }
+        @include mq(lg) {
+            margin-top: -15rem;
+        }
+        @include mq(md) {
+            margin-top: -10rem;
+        }
+        @include mq(sm) {
+            margin-top: -6rem;
+        }
+    }
+    .right-skew {
+        background: rgba(237, 99, 94, 0.8);
+        z-index: -2;
+        transform: rotate(6deg);
+        margin-top: -2rem;
+        margin-left: -3rem;
+    }
+    .header {
+        .flex {
+            margin-top: 2rem;
+            @include mq(sm) {
+                display: flex;
+            }
+            .app-store {
+                display: none;
+                @include mq(sm) {
+                    display: inline;
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+    &__txt {
+        color: #fff;
+        @include mq(sm) {
+            width: 100%;
+            text-align: center;
+            a {
+                display: none;
+            }
+        }
+        h2 {
+            font-size: 3rem;
+            margin-top: 30%;
+            @include mq(md) {
+                font-size: 2.5rem;
+            }
+            @include mq(sm) {
+                margin-top: 3rem;
+                font-size: 2rem;
+            }
+        }
+        p {
+            margin-top: 2.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__img {
+        width: 50%;
+        margin-top: 5rem;
+        @include mq(sm) {
+            width: 100%;
+            text-align: center;
+        }
+        img {
+            width: 35rem;
+            height: auto;
+            @include mq(md) {
+                width: 100%;
+            }
+            @include mq(sm) {
+                width: 20rem;
+            }
+        }
+    }
+    .flex {
+        @include mq(sm) {
+            display: block;
+        }
+    }
+}
+
+.feature {
+    .flex {
+        @include mq(sm) {
+            display: block;
+        }
+    }
+    &__img {
+        text-align: center;
+        width: 50%;
+        order: 1;
+        @include mq(sm) {
+            width: 100%;
+        }
+        img {
+            width: 36.4rem;
+            height: auto;
+            @include mq(md) {
+                width: 100%;
+            }
+            @include mq(sm) {
+                width: 20rem;
+            }
+        }
+    }
+    &__txt {
+        width: 50%;
+        padding-top: 8rem;
+        @include mq(sm) {
+            width: 100%;
+        }
+        order: 2;
+        @include mq(md) {
+            padding-top: 0;
+        }
+        &--container {
+            margin-bottom: 5rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+            color: #3F4C58;
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+            @include mq(md) {
+                font-size: 2rem;
+                img {
+                    height: 2rem;
+                }
+            }
+            img {
+                margin-right: 1rem;
+            }
+        }
+        p {
+            color: #6C6C6C;
+        }
+    }
+}
+
+.section-ttl {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    text-align: center;
+    @include mq(sm) {
+        font-size: 2rem;
+    }
+}
+
+.flow {
+    padding: 10rem 0;
+    background-color: #F89348;
+    color: #fff;
+    .section-ttl {
+        color: #fff;
+    }
+    .flex {
+        justify-content: space-around;
+    }
+    &__txt {
+        margin-top: 5rem;
+        width: 50%;
+        @include mq(md) {
+            margin-top: 2rem;
+            width: 70%;
+        }
+        &--container {
+            height: 15rem;
+            @include mq(sm) {
+                height: 20rem;
+            }
+        }
+        h3 {
+            font-size: 2rem;
+            @include mq(md) {
+                font-size: 1.8rem;
+            }
+            @include mq(sm) {
+                font-size: 1.6rem;
+            }
+            span {
+                width: 4rem;
+                height: 4rem;
+                display: inline-block;
+                text-align: center;
+                line-height: 4rem;
+                border-radius: 50%;
+                background-color: #fff;
+                color: #3F4C58;
+                box-shadow: 0 0 1rem rgba(0, 0, 0, .16);
+                margin-right: 1rem;
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 15rem;
+                    background-color: #fff;
+                    display: block;
+                    margin-left: 2rem;
+                    @include mq(sm) {
+                        height: 20rem;
+                    }
+                }
+            }
+            .last-flow {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        p {
+            margin-left: 5rem;
+            br {
+                @include mq(md) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__img {
+        width: 40%;
+        @include mq(md) {
+            width: 30%;
+        }
+        img {
+            width: 33.4rem;
+            height: auto;
+            @include mq(md) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.closing {
+    padding: 10rem 0;
+    background: linear-gradient(#ED635E, #E49B3D);
+    color: #fff;
+    text-align: center;
+    p {
+        margin-bottom: 5.5rem;
+    }
+}

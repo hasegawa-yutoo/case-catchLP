@@ -1,0 +1,95 @@
+/* *****************************
+ *
+ * Import file to Scss or Sass.
+ *
+ **************************** */
+@import "normalize.min";
+@import "module/header";
+@import "module/top";
+@import "module/footer";
+@import "module/under";
+
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a,
+p,
+small,
+table,
+input,
+textarea {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-appearance: none;
+    font-family: "Noto Sans Japanese";
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media screen and (min-width:768px) {
+    .wrapper {
+        width: 750px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .wrapper {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .wrapper {
+        width: 1170px;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
